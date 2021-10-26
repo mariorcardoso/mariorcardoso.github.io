@@ -13,13 +13,17 @@ The grand finale will be on the structure and dynamics of our hero of the day - 
 ## WebSockets
 
 **What are WebSockets?** If you try to find that answer on the internet, you may get statements like:
-
-_"WebSockets are those cool things the Node people get to use”_
-
+\
+\
+_"WebSockets are those cool things the Node people get to use"_
+\
+\
 or
-
-_“I heard that WebSockets are the future”_
-
+\
+\
+_"I heard that WebSockets are the future"_
+\
+\
 ![Shia Labeouf SNL]({{ site.baseurl }}/images/websockets-rails-5/gifmachine-2.gif)
 
 **WebSockets are basically another layer of communication between client and server but, unlike HTTP requests, their connections are _stateful_.** This means that the link between client and server remains constant and connected.
@@ -86,8 +90,8 @@ The **channel.rb** inherits from **ActionCable::Channel::Base** and it's similar
 
 Then, we have two channels under the folder, the **appearance_channel.rb** and the **room_channel.rb**. Those were the channels that I created. The channels have the same subscribed and unsubscribed methods:
 
-*   The **subscribed** callback is invoked when a client-side subscription is initiated;
-*   The **unsubscribed** callback is invoked when a client-side subscription is terminated.
+* The **subscribed** callback is invoked when a client-side subscription is initiated;
+* The **unsubscribed** callback is invoked when a client-side subscription is terminated.
 
 **AppearanceChannel** has also two more methods that can be invoked by the client. **RoomChannel** has one more method, the **speak** method, that is also used by the client to send messages to the channel.
 
@@ -106,9 +110,9 @@ Then we have the channel's subscribers. In this case we have the appearance subs
 We can see in the image above how the channel subscription is made.  
 The subscribers have some methods in common:
 
-*   The **connected** method is called when the subscription is ready for use on the server;
-*   The **disconnected** method is called when the subscription has been terminated by the server;
-*   And finally the **received** method that is called when the server sends data to the client.
+* The **connected** method is called when the subscription is ready for use on the server;
+* The **disconnected** method is called when the subscription has been terminated by the server;
+* And finally the **received** method that is called when the server sends data to the client.
 
 Then each channel can implement different methods that interact with the channel they subscribe on the server-side. That is the case with the **speak**, **appear** and **away** methods that can send data and call the corresponding methods on the server-side.
 
