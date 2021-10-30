@@ -2,7 +2,7 @@
 layout: post
 title:  "Want to use ES6 with Rails right now? Webpack to the rescue"
 date:   2017-03-09
-categories: web rails4 es6 js
+categories: rails4 es6
 ---
 Today I’m going to talk about setting up a Rails application so you can write complex JavaScript features using ECMAScript 6, also known as ECMAScript 2015, and its marvellous new features.
 
@@ -30,7 +30,7 @@ There are many more workarounds to get ES6 in Rails environment. Here I’ll exp
 
 The project directory ended up looking like this:
 
-![project directory](https://miro.medium.com/max/340/1*zBXBnqE3sz5U8Yz5h0E9oA.png)
+![project directory]({{ site.baseurl }}/images/rails4-es6/1-final-directory.png)
 
 In the following sections I will explain this setup in more detail, while I walk you through the needed steps.
 
@@ -115,11 +115,11 @@ To get a better feeling on this, let’s take a look at a sample application whe
 
 In the root app directory we will see four new things. We have two new folders, the app-js directory where we will put our JS code and the node-modules directory where the packages managed by npm will be placed. We have also the two configuration files, package.json and webpack.config.js.
 
-![webpack config](https://miro.medium.com/max/340/1*zBXBnqE3sz5U8Yz5h0E9oA.png)
+![webpack config]({{ site.baseurl }}/images/rails4-es6/2-package-webpack.png)
 
 Inside the app-js directory we can write an entire JS project that uses all the new ES6 features. It will be compiled into one file and placed in the asset pipeline. The code I have here is just one small example. I took inspiration in the [konva.js](https://konvajs.github.io/) demo and created a few JavaScript classes.
 
-![javascript classes](https://miro.medium.com/max/328/1*kIhAbT5fH7PX0i4n3O_pBg.png)
+![javascript classes]({{ site.baseurl }}/images/rails4-es6/3-app-js.png)
 
 The entry end point is the main.js file. This is the main file of our application where the code will start to execute. As you can see in this file we are using modules by importing classes that we depend on.
 

@@ -2,10 +2,10 @@
 layout: post
 title:  "Value Objects in Ruby on Rails"
 date:   2017-06-29
-categories: rails patterns "value objects"
+categories: rails patterns value_objects
 ---
 
-![](https://miro.medium.com/max/1400/1*luqPGefqe8_spk1vSncF8Q.jpeg)
+![petronas twin towers](https://miro.medium.com/max/1400/1*luqPGefqe8_spk1vSncF8Q.jpeg)
 
 Today I’m going to talk about value objects and how they can be used and identified in your Rails application.
 
