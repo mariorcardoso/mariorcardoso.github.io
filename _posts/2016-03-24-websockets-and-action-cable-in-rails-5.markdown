@@ -24,7 +24,7 @@ or
 _"I heard that WebSockets are the future"_
 \
 \
-![Shia Labeouf SNL]({{ site.baseurl }}/images/rails5-websockets/gifmachine-2.gif)
+![Shia Labeouf SNL](/images/rails5-websockets/gifmachine-2.gif)
 
 **WebSockets are basically another layer of communication between client and server but, unlike HTTP requests, their connections are _stateful_.** This means that the link between client and server remains constant and connected.
 
@@ -78,7 +78,7 @@ Just to get the feeling of Action Cable in action I built a simple chat app. It'
 
 When you create your Rails 5 application you have now one more folder inside the app directory, the **channels** folder.
 
-![Channels Folder]({{ site.baseurl }}/images/rails5-websockets/channels-folder.png)
+![Channels Folder](/images/rails5-websockets/channels-folder.png)
 
 Under the folder channels you have the **application_cable** folder that contains the **channel.rb** file and the **connection.rb** file.
 
@@ -86,7 +86,7 @@ The **connection.rb** file inherits form **ActionCable::Connection::Base** and i
 
 The **channel.rb** inherits from **ActionCable::Channel::Base** and it's similar to the ApplicationController in our normal Rails Application.
 
-![appearance_channel.rb and room_channel.rb]({{ site.baseurl }}/images/rails5-websockets/appearance-and-room-channel.png)
+![appearance_channel.rb and room_channel.rb](/images/rails5-websockets/appearance-and-room-channel.png)
 
 Then, we have two channels under the folder, the **appearance_channel.rb** and the **room_channel.rb**. Those were the channels that I created. The channels have the same subscribed and unsubscribed methods:
 
@@ -95,17 +95,17 @@ Then, we have two channels under the folder, the **appearance_channel.rb** and t
 
 **AppearanceChannel** has also two more methods that can be invoked by the client. **RoomChannel** has one more method, the **speak** method, that is also used by the client to send messages to the channel.
 
-![AppearanceChannel]({{ site.baseurl }}/images/rails5-websockets/appearance-channel.png)
+![AppearanceChannel](/images/rails5-websockets/appearance-channel.png)
 
-![Client Side Structure]({{ site.baseurl }}/images/rails5-websockets/client-side-structure.png)
+![Client Side Structure](/images/rails5-websockets/client-side-structure.png)
 
 From the client-side we have the **cable.coffee** file that is responsible to create the connection between client and server.
 
-![Channel's Subscribers]({{ site.baseurl }}/images/rails5-websockets/channels-subscribers.png)
+![Channel's Subscribers](/images/rails5-websockets/channels-subscribers.png)
 
 Then we have the channel's subscribers. In this case we have the appearance subscriber that joined the appearance channel, and we have the room channel subscriber that joined the room channel.
 
-![Channel Subscription]({{ site.baseurl }}/images/rails5-websockets/channel-subscription.png)
+![Channel Subscription](/images/rails5-websockets/channel-subscription.png)
 
 We can see in the image above how the channel subscription is made.  
 The subscribers have some methods in common:

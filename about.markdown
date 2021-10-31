@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Mário.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm software engineer based in Lisbon, Portugal.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I work at [Onfido](https://www.onfido.com/).
 
+Sometimes I write [blogs posts](https://mariorcardoso.github.io/blog.html).
 
-[jekyll-organization]: https://github.com/jekyll
+I have participated in the [Ruby on Rails Lisbon meetup](https://www.meetup.com/ruby-lx/events/231097807/).
+
+You can also find me on [Linkedin](https://www.linkedin.com/in/mariorcardoso/), [GitHub](https://github.com/mariorcardoso), [StackOverflow](https://stackoverflow.com/users/3329124/mario) and [Twitter](https://twitter.com/mariorcardoso).
