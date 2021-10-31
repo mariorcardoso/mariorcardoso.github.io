@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![mario](/images/about/mario.jpg)
+
 My name is Mário.
 
 I'm software engineer based in Lisbon, Portugal.
