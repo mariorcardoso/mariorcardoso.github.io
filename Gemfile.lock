@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/jekyll/minima
+  remote: https://github.com/jekyll/minima.git
   revision: 7a326eb6df07ee6ee5305cfc1b28f7092037e67d
   specs:
     minima (2.5.1)
