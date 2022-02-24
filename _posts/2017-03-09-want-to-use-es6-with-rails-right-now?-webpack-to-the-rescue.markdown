@@ -30,7 +30,7 @@ There are many more workarounds to get ES6 in Rails environment. Here I’ll exp
 
 The project directory ended up looking like this:
 
-![project directory]({{ site.baseurl }}/images/rails4-es6/1-final-directory.png)
+![project directory]({{ site.baseurl }}/media/rails4-es6/1-final-directory.png)
 
 In the following sections I will explain this setup in more detail, while I walk you through the needed steps.
 
@@ -53,9 +53,9 @@ Go through all the steps by filling out the information you think is appropriate
 Now we need a compiler for our ES6 code. This is where Babel comes in. Babel is a JavaScript compiler that helps you write the latest version of JavaScript by compiling it to ES5 code, that today’s browsers can understand. We are going to install the babel-loader and babel-core packages that will be used to work with Webpack, as well as the ES2015 presets to load the code we will write.
 
 ```bash
-npm install --save-dev babel-loader  
-npm install --save-dev babel-core  
-npm install --save-dev babel-preset-es2015  
+npm install --save-dev babel-loader
+npm install --save-dev babel-core
+npm install --save-dev babel-preset-es2015
 npm install --save-dev babel-polyfill
 ```
 
@@ -92,12 +92,12 @@ webpack
 The output of that command should be something like this:
 
 ```bash
-Hash: a591cde9072bb3bd1422  
-Version: webpack 1.14.0  
-Time: 2721ms  
-    Asset    Size  Chunks             Chunk Names  
-app-js.js  877 kB       0  [emitted]  main  
-   [0] multi main 40 bytes {0} [built]  
+Hash: a591cde9072bb3bd1422
+Version: webpack 1.14.0
+Time: 2721ms
+    Asset    Size  Chunks             Chunk Names
+app-js.js  877 kB       0  [emitted]  main
+   [0] multi main 40 bytes {0} [built]
     + 305 hidden modules
 ```
 
@@ -115,11 +115,11 @@ To get a better feeling on this, let’s take a look at a sample application whe
 
 In the root app directory we will see four new things. We have two new folders, the app-js directory where we will put our JS code and the node-modules directory where the packages managed by npm will be placed. We have also the two configuration files, package.json and webpack.config.js.
 
-![webpack config]({{ site.baseurl }}/images/rails4-es6/2-package-webpack.png)
+![webpack config]({{ site.baseurl }}/media/rails4-es6/2-package-webpack.png)
 
 Inside the app-js directory we can write an entire JS project that uses all the new ES6 features. It will be compiled into one file and placed in the asset pipeline. The code I have here is just one small example. I took inspiration in the [konva.js](https://konvajs.github.io/) demo and created a few JavaScript classes.
 
-![javascript classes]({{ site.baseurl }}/images/rails4-es6/3-app-js.png)
+![javascript classes]({{ site.baseurl }}/media/rails4-es6/3-app-js.png)
 
 The entry end point is the main.js file. This is the main file of our application where the code will start to execute. As you can see in this file we are using modules by importing classes that we depend on.
 
@@ -141,5 +141,5 @@ Webpack, npm and ES6 are here to stay, and so is Rails. The JavaScript ecosystem
 
 In the meanwhile even though Rails 5.1.0 is in beta you can still write ES6 and include it in your application. All you need is two small configuration files like the ones I mentioned. Later when Rails 5.1.0 is released, and your app is ready for the upgrade, you can reuse all the code you wrote. I’m really happy with the new developments in Rails and looking forward to see what the developers and the community will do with them.
 
-The code for the sample app can be found here: [https://github.com/mariorcardoso/rails_webpack_npm_es6](https://github.com/mariorcardoso/rails_webpack_npm_es6)  
+The code for the sample app can be found here: [https://github.com/mariorcardoso/rails_webpack_npm_es6](https://github.com/mariorcardoso/rails_webpack_npm_es6)
 You can see the app live here: [https://rails-webpack-npm-es6.herokuapp.com/](https://rails-webpack-npm-es6.herokuapp.com/)

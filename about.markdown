@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![mario](/images/about/mario.jpg)
+![mario](/media/about/mario.jpg)
 
 Hello. My name is Mário.
 
