@@ -17,6 +17,4 @@ gem "minima", git: "https://github.com/jekyll/minima", branch: "master"
 gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed"
-end
+gem "jekyll-feed", group: :jekyll_plugins
