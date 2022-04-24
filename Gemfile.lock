@@ -235,9 +235,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     multipart-post (2.1.1)
-    nokogiri (1.13.4-x86_64-darwin)
+    nokogiri (1.13.4)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     octokit (4.22.0)
       faraday (>= 0.9)
@@ -278,7 +280,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
-  x86_64-darwin-21
+  ruby
 
 DEPENDENCIES
   github-pages
@@ -286,4 +288,4 @@ DEPENDENCIES
   minima!
 
 BUNDLED WITH
-   2.3.7
+   2.1.4
