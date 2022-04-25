@@ -157,7 +157,9 @@ const generateImageWithCanvas = (
 
 ### Demo
 
-![demo]({{ site.baseurl }}/media/screenshot-tool/demo-screenshot-tool.mp4)
+<video width="740" controls>
+  <source src="{{ site.baseurl }}/media/screenshot-tool/demo-screenshot-tool.mp4" type="video/mp4">
+</video>
 
 ## Conclusion
 
