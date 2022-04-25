@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+$spacing-unit:     30px !default;
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: $spacing-unit 0;
+}
+
+.svg-icon {
+  padding: 5px 5px 5px 5px
+}
+
+.social-media-list {
+  display: table;
+  margin: 0 auto;
+  li {
+    float: left;
+    margin: 5px 10px 5px 0;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: $spacing-unit / 4;
+      border: 1px solid #e8e8e8;
+      &:hover { border-color: #dbdbdb }
+    }
+  }
+}
+
+.social-media-list li + li {
+  padding-top: 0;
+}

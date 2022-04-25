@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/jekyll/minima
-  revision: 69664442e5a45f631d5bccaba6d7978a91ce22c8
-  specs:
-    minima (2.5.1)
-      jekyll (>= 3.5, < 5.0)
-      jekyll-feed (~> 0.9)
-      jekyll-seo-tag (~> 2.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -235,6 +226,10 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
     mini_portile2 (2.8.0)
+    minima (2.5.1)
+      jekyll (>= 3.5, < 5.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
     minitest (5.15.0)
     multipart-post (2.1.1)
     nokogiri (1.13.4)
@@ -282,9 +277,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
-  jekyll-feed
-  minima!
+  github-pages (~> 226)
+  jekyll-feed (~> 0.12)
+  jekyll-gist
+  minima (~> 2.5)
 
 BUNDLED WITH
    2.1.4
